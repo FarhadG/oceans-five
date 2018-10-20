@@ -13,7 +13,7 @@ import IconTable from 'react-icons/lib/md/grid-on';
 import IconForm from 'react-icons/lib/md/layers';
 import IconDown from 'react-icons/lib/md/chevron-right';
 import IconMail from 'react-icons/lib/md/email';
-import ScrollArea from '../scrollbar';
+import ScrollArea from '../scrollbar/index';
 
 import './style.css';
 

@@ -2,7 +2,7 @@
   "name": "oceans-five",
   "version": "0.0.1",
   "private": true,
-  "homepage": "http://farhadg.github.io/oceans-five",
+  "homepage": "https://farhadg.github.io/oceans-five/",
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
     "draft-js": "0.10.1",
@@ -31,10 +31,13 @@
     "build:js": "react-scripts build",
     "start": "npm-run-all -p build:css watch:css start:js",
     "build": "npm-run-all -p build:css build:js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2"
   }
