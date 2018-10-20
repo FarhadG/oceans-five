@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {Router, useRouterHistory} from 'react-router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import routes from './routes';
+
+// import main style dependency file
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const history = useRouterHistory(createBrowserHistory)({
+    basename: '/'       // to serve this template from subdirectory, change the base path.
+})
+
+ReactDOM.render(
+    <Router history={history} routes={routes}/>,
+    document.getElementById('root')
+);

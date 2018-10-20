@@ -1,28 +1,43 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Nav from './shared/components/nav';
+import SiteHead from './shared/components/header';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import Reader from './components/Reader/Reader';
+
+import './app.css';
+
+export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {navMini: false}
+    }
+
+    toggleNav = (e) => {
+        e.preventDefault();
+        this.setState({navMini: !this.state.navMini});
+    }
+
+    hideNav = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        this.setState({navMini: false})
+    }
+
+    render() {
+        let navMini = this.state.navMini;
+        return (
+            <div className="app-wrapper">
+                <Nav mini={navMini} toggleNav={this.toggleNav}/>
+                <div className={`content-container ${navMini ? 'full' : ''}`}>
+                    {/* dropshadow for mobile nav triggering */}
+                    <div className="menu-dropshadow" style={{display: (navMini ? 'block': 'none')}} onClick={this.hideNav}></div>
+                    <SiteHead toggleNav={this.toggleNav}/>
+                    <div style={{ width: '500px' }}>
+                      <Reader />
+                    </div>
+                    {this.props.children}
+                </div>
+            </div>
+        )
+    }
 }
-
-export default App;
