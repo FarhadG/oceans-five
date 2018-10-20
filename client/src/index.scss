@@ -1,180 +1,279 @@
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-}
+@import 'shared/variables'; // modify bootstrap variables and put extra variables in this file
+@import './node_modules/bootstrap/scss/bootstrap.scss'; // import full bootstrap here (as-is)
 
-*, *:before, *:after {
-  box-sizing: inherit;
+
+// ---------- bootstrap override ------------
+// ------------------------------------------
+html {
+    font-size: $font-size-root;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  margin: 0;
+    letter-spacing: .045rem;
 }
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+*:focus {
+    outline: none!important;
 }
-
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
 a {
-  background-color: transparent;
+    text-decoration: none;
+    &:hover {
+        color: inherit;
+    }
 }
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+hr {
+    margin-top: 1.4rem;
+    margin-bottom:1.4rem;
 }
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
 img {
-  border-style: none;
+    max-width: 100%;
 }
-
+code {
+    font-size: 80%;
+    background: $md-deep-orange-50;
+    color: $md-brown-800;
+}
 button,
 input,
 optgroup,
 select,
 textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+    font-family: $font-family-sans-serif;
 }
 
-button,
-input { /* 1 */
-  overflow: visible;
+/** Bug fix for pre **/
+// @media (max-width: 575px) {
+//     .container {
+//         max-width: 100%;
+//     }
+// }
+
+// ------ buttons
+.btn {
+    box-shadow: 0 1px 1px rgba(0,0,0,.09), 0 1px 2px rgba(0,0,0,.05);
+    &:focus {
+        box-shadow: none;
+    }
+}
+.btn-fab {
+    border-radius: 50%;
+    min-width: 44px; min-height: 44px;
+    padding: 0;
+}
+.btn-fab.btn-sm {
+    min-width: 32px; min-height: 32px;
+}
+.btn-fab.btn-lg {
+    min-width: 56px; min-height: 56px;
 }
 
-button,
-select { /* 1 */
-  text-transform: none;
+// ----- breadcrumb
+.breadcrumb-item.active {
+    font-weight: 700;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+// ----- dropdowns
+.dropdown > .dropdown-menu {
+    transition: .2s ease-in-out;
+    transform: scale(.8);
+    transform-origin: 100% 0;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+}
+.dropdown.show > .dropdown-menu{
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-menu {
+    box-shadow: 1px 2px 4px rgba(0,0,0,.15);
+}
+.dropdown-item {
+    padding: 7px $dropdown-item-padding-x;
+    a {
+        color: $body-color;
+    }
 }
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+
+
+// ----- cards
+.card {
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+.card-inverse {
+    color: rgba(255, 255, 255, .95);
 }
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+
+// ----- utilities
+.font-weight-semi-bold {
+    font-weight: 600;
 }
 
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
+// ---- reactable header
+.reactable-header-sortable > span {
+    display: inline-block;
+    position: relative;
+    &::after, &::before{
+        content: '';
+        position: absolute;
+        border: 4px solid transparent;
+        right: -1.2rem;
+    }
+    &::after {
+        border-color: $md-grey-500 transparent transparent transparent;
+        top: 11px;
+    }
+    &::before {
+        border-color: transparent transparent $md-grey-500 transparent;
+        top: 1px;
+    }
+}
+// hide one of the triangle on sort.
+.reactable-header-sort-asc.reactable-header-sortable > span::before,
+.reactable-header-sort-desc.reactable-header-sortable > span::after {
+    border-color: transparent;
 }
 
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+
+
+// ---- Reactable pagination
+.reactable-pagination {
+    .reactable-page-button,
+    .reactable-next-page, .reactable-previous-page  {
+        display: inline-block;
+        cursor: pointer;
+        padding: .35rem .9rem;
+        font-size: 12px;
+        border: 1px solid $md-grey-200;
+        border-radius: 2px;
+        margin-right: 4px;
+    }
+    .reactable-current-page {
+        background: $md-blue-500;
+        color: #fff;
+    }
+    .reactable-next-page, .reactable-previous-page {
+
+    }
 }
 
-progress {
-  vertical-align: baseline;
+
+// Modals Transition
+// -----------------
+// Because we can't add extra class directly in `.modal` through reactstrap react lib.
+// We attached it to `.modal-dialog` and controlled it via `.fade` and `.show` class of `.modal`
+.modal {
+    .modal-dialog {
+        margin-top: 8rem;
+    }
+    .modal-header .modal-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    &.fade{
+        perspective: 1300;  // for 3d flip effect
+        .modalFadeInScale,
+    	.modalSlideIn,
+    	.modal3DFlipHorizontal,
+    	.modal3DFlipVertical,
+    	.modalFall,
+    	.modalRapid {
+            &.modal-dialog {
+                transition: .3s;
+            }
+        }
+    }
+    &.show {
+        .modalFadeInScale,
+    	.modalSlideIn,
+    	.modal3DFlipHorizontal,
+    	.modal3DFlipVertical,
+    	.modalFall,
+    	.modalRapid {
+            &.modal-dialog{
+                opacity: 1;
+            }
+        }
+    }
+
+	// === fadeInScale
+    .modalFadeInScale.modal-dialog {
+        transform: scale(.7);
+    }
+    &.show .modalFadeInScale.modal-dialog {
+        transform: scale(1);
+        -webkit-font-smoothing: subpixel-antialiased
+    }
+
+	// ==== slideIn
+    .modalSlideIn.modal-dialog {
+        transform: translate(20%, 0);
+    }
+    &.show .modalSlideIn.modal-dialog {
+        transform: translate(0,0);
+    }
+
+	// === 3D Flip (Horizontal)
+    .modal3DFlipHorizontal.modal-dialog {
+        transform: rotateY(-70deg);
+    }
+    &.show .modal3DFlipHorizontal.modal-dialog {
+        transform: rotateY(0);
+        transform-style: preserve-3d;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+
+	// === 3D Flip (Vertical)
+    .modal3DFlipVertical.modal-dialog {
+        transform: rotateX(-70deg);
+    }
+    &.show .modal3DFlipVertical.modal-dialog {
+        transform: rotateX(0);
+        transform-style: preserve-3d;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+	// === fall
+    .modalFall.modal-dialog {
+        transform-style: preserve-3d;
+        transform: translateZ(600px) rotateX(20deg);
+    }
+    &.show .modalFall.modal-dialog {
+        transform: translateZ(0px) rotateX(0deg);
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+	// === Fast Train
+    &.show .modal-dialog.modalRapid {
+        animation: modalRapid .5s forwards ease-out;
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+
+	@-webkit-keyframes modalRapid {
+		0% { opacity: 0; -webkit-transform: translate3d(calc(-100vw - 50%), 0, 0); }
+		50% { opacity: 1; -webkit-transform: translate3d(100px, 0, 0); }
+		100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); }
+	}
+
+	@keyframes modalRapid {
+		0% { opacity: 0; -webkit-transform: translate3d(calc(-100vw - 50%), 0, 0); transform: translate3d(calc(-100vw - 50%), 0, 0); }
+		50% { opacity: 1; -webkit-transform: translate3d(100px, 0, 0); transform: translate3d(100px, 0, 0); }
+		100% { opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+	}
+
 }
 
-textarea {
-  overflow: auto;
-}
 
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
 
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
 
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
 
-details {
-  display: block;
-}
 
-summary {
-  display: list-item;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none;
-}
+// ---------- END ---------

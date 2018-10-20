@@ -1,13 +1,18 @@
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
+import {Router, useRouterHistory} from 'react-router';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import routes from './routes';
 
-import './index.scss';
-import App from './components/App/App';
-import * as serviceWorker from './serviceWorker';
+// import main style dependency file
+import './index.css';
 
-render(
-  <App />,
-  document.getElementById('root')
+
+const history = useRouterHistory(createBrowserHistory)({
+    basename: '/'       // to serve this template from subdirectory, change the base path.
+})
+
+ReactDOM.render(
+    <Router history={history} routes={routes}/>,
+    document.getElementById('root')
 );
-
-serviceWorker.unregister();
