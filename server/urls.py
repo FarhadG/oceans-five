@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from api.views import charge, init_db
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'api/init_db', init_db),
+    url(r'api/charge', charge)
 ]
