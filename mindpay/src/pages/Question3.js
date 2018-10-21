@@ -1,41 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Brain from '../components/brain/brain';
 
+import BasePage from './BasePage';
+import { getColor } from '../helpers';
 import './styles/home.css';
-import mind from '../mind';
-import { changePage } from '../helpers';
 
-const getColor = state => ({
-  'Yes': 'green',
-  'No': 'red'
-}[state] || 'grey');
-
-class Page extends Component {
+export default class Page extends BasePage {
 
   constructor(props) {
     super(props);
-    this.state = {
-      answer: false
-    }
-  }
-
-  componentDidMount() {
-    let
-      self = this,
-      count = 0,
-      answer = mind.state;
-
-    (function checkAnswer() {
-      answer = answer || mind.state;
-      count++;
-      if (count < 5) {
-        setTimeout(checkAnswer, 1000);
-      }
-      else {
-        self.setState({ answer: answer ? 'Yes' : 'No' });
-        setTimeout(() => changePage('/question/3'), 2000);
-      }
-    })()
   }
 
   render() {
@@ -49,5 +22,3 @@ class Page extends Component {
     )
   }
 }
-
-export default Page;

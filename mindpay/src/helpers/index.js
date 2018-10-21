@@ -1,1 +1,2 @@
-export * from './history.js'; // re-export all of its exports
+export * from './history.js';
+export * from './utils.js';
