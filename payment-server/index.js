@@ -1,8 +1,14 @@
+const cors = require('cors')
 const express = require('express');
+const bodyParser = require('body-parser');
 const paypal = require('paypal-rest-sdk');
 
 const port = 8080;
 const app = express();
+
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 paypal.configure({
   mode: 'sandbox',
@@ -10,7 +16,10 @@ paypal.configure({
   client_secret: 'EO422dn3gQLgDbuwqTjzrFgFtaRLRR5BdHEESmha49TM'
 });
 
-app.get('/paypal', (req, res) => {
+app.post('/paypal', (req, res) => {
+
+  console.log('>>>', req.body)
+
   const paymentData = {
     "intent": "sale",
     "payer": {

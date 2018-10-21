@@ -19,7 +19,9 @@ export default class BasePage extends Component {
 
   submitPaymentPayPal = () => {
     return axios
-    .post('http://127.0.0.1:8080/paypal')
+    .post('http://127.0.0.1:8080/paypal', {
+      payment: 123
+    })
     .then(console.log)
     .catch(console.error);
   };
