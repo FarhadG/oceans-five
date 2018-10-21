@@ -82,11 +82,7 @@ export default class extends React.Component {
                 </Modal>
                 <header className="mail-head d-flex align-items-center justify-content-between p-4">
                     <Link to="/" style={{marginTop: '-.4rem'}} className="hidden-sm-down">
-                        <svg width="26px" height="34px" viewBox="11 4 50 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                            {/* <polyline id="Path" stroke="#4CAF50" strokeWidth="11" fill="none" points="21 36.6942904 49.6837349 30.667532 51.5974407 16 31.3353728 16 29.3402961 16 21 36.6942904 29.3402958 55.1487999 53.5974407 52.415905"></polyline> */}
-                            <path id="Path" stroke="#fff" strokeWidth="12" fill="none" d="M26.5282909,38.9526768 C26.5282909,38.9526768 49.3408202,31.7856836 49.3408202,28.3647852 C49.3408202,24.9438868 49.5702829,11.7001695 37.0898141,17.411107 C24.6093454,23.1220444 24.821289,23.6064453 24.821289,23.6064453 C24.821289,23.6064453 22.8105177,47.2876359 26.528291,53.5093155 C30.2460643,59.7309951 52.7998045,53.5093155 54.7998045,53.5093155"></path>
-                        </svg>
-                        <strong className="h4 text-uppercase font-weight-bold" style={{color: '#fafafa'}}>ract</strong>
+                        <strong className="h4 text-uppercase font-weight-bold" style={{color: '#fafafa'}}>Ocean's Five</strong>
                     </Link>
                     <IconMenu size="24" color="#fff" className="hidden-md-up mr-3" onClick={this.toggleNav}/>
                     <form className="col-6 col-md-6 ml-auto mail-search">

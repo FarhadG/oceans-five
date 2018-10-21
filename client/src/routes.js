@@ -1,39 +1,41 @@
 import React from 'react';
 import { Route, IndexRoute, Redirect } from 'react-router';
 import App from './App';
-import Dashboard from './views/dashboard';
-import Mail from './views/mail';
-import Widgets from './views/widgets';
+import Dashboard from './pages/dashboard';
+import Mail from './pages/mail';
+import Widgets from './pages/widgets';
 
 // ui elements
-import Buttons from './views/ui/buttons';
-import Typography from './views/ui/typography';
-import Cards from './views/ui/cards';
-import Modals from './views/ui/modals';
-import Notification from './views/ui/notification';
-import Extras from './views/ui/extras';
+import Buttons from './pages/ui/buttons';
+import Typography from './pages/ui/typography';
+import Cards from './pages/ui/cards';
+import Modals from './pages/ui/modals';
+import Notification from './pages/ui/notification';
+import Extras from './pages/ui/extras';
 
 // forms
-import FormGeneral from './views/forms/general';
-import FormAdvanced from './views/forms/advanced';
+import FormGeneral from './pages/forms/general';
+import FormAdvanced from './pages/forms/advanced';
 
 // charts
-import Charts from './views/charts';
+import Charts from './pages/Payments';
 
 // tables
-import Tables from './views/tables';
+import Tables from './pages/tables';
 
 // pages
-import SignIn from './views/pages/signin';
-import Register from './views/pages/register';
-import ForgetPass from './views/pages/forget';
-import Page404 from './views/pages/404';
-import PageInvoice from './views/pages/invoice';
+import SignIn from './pages/pages/signin';
+import Register from './pages/pages/register';
+import ForgetPass from './pages/pages/forget';
+import Page404 from './pages/pages/404';
+import PageInvoice from './pages/pages/invoice';
 
 export default (
   <Route>
     <Route component={App} path='/'>
       <IndexRoute component={Dashboard} />
+      <Route path='payments' component={Charts} />
+
       <Route path='widgets' component={Widgets} />
       <Route path='ui/buttons' component={Buttons} />
       <Route path='ui/typography' component={Typography} />
