@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5719f452-5a05-498a-9478-5dc6f76cb901" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mindpay/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindpay/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindpay/src/helpers/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindpay/src/helpers/history.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindpay/src/helpers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindpay/src/helpers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindpay/src/pages/Question1.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindpay/src/pages/Question1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindpay/src/pages/Question2.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindpay/src/pages/Question2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mindpay/src/pages/Question3.js" beforeDir="false" afterPath="$PROJECT_DIR$/mindpay/src/pages/Question3.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,8 +33,8 @@
           <entry key="css" value="5" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="1" />
-          <entry key="js" value="24" />
-          <entry key="json" value="4" />
+          <entry key="js" value="50" />
+          <entry key="json" value="7" />
           <entry key="scss" value="12" />
           <entry key="svg" value="1" />
         </counts>
@@ -39,8 +43,8 @@
         <counts>
           <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="24" />
+          <entry key="JSON" value="7" />
+          <entry key="JavaScript" value="50" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="12" />
           <entry key="SVG" value="1" />
@@ -51,8 +55,8 @@
           <entry key="css" value="38" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="4" />
-          <entry key="js" value="835" />
-          <entry key="json" value="92" />
+          <entry key="js" value="5919" />
+          <entry key="json" value="103" />
           <entry key="scss" value="175" />
         </counts>
       </usages-collector>
@@ -60,8 +64,8 @@
         <counts>
           <entry key="CSS" value="38" />
           <entry key="HTML" value="4" />
-          <entry key="JSON" value="92" />
-          <entry key="JavaScript" value="835" />
+          <entry key="JSON" value="103" />
+          <entry key="JavaScript" value="5919" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="175" />
         </counts>
@@ -71,10 +75,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mindpay/src/index.js">
+        <entry file="file://$PROJECT_DIR$/mindpay/src/pages/BasePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="519">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Question1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Question2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Question3.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -91,6 +131,7 @@
       <find>&gt;&gt;&gt;&gt;</find>
       <find>.nav-head</find>
       <find>ract</find>
+      <find>confi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,6 +163,21 @@
         <option value="$PROJECT_DIR$/client/src/components/nav/style.scss" />
         <option value="$PROJECT_DIR$/client/src/pages/dashboard/index.js" />
         <option value="$PROJECT_DIR$/mindpay/src/index.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/Routes.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/components/brain/brain.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/App.js" />
+        <option value="$PROJECT_DIR$/mindpay/package.json" />
+        <option value="$PROJECT_DIR$/mindpay/src/Mind.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/mind.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/pages/Home.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/helpers/history.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/helpers/utils.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/helpers/index.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/pages/BaseQuestion.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/pages/Question3.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/pages/Question1.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/pages/Question2.js" />
+        <option value="$PROJECT_DIR$/mindpay/src/pages/BasePage.js" />
       </list>
     </option>
   </component>
@@ -195,6 +251,13 @@
               <item name="mindpay" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="oceans-five" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oceans-five" type="462c0819:PsiDirectoryNode" />
+              <item name="mindpay" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -248,12 +311,12 @@
       <updated>1540071757439</updated>
       <workItem from="1540071760740" duration="5312000" />
       <workItem from="1540087603167" duration="795000" />
-      <workItem from="1540088637778" duration="133000" />
+      <workItem from="1540088637778" duration="13001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6240000" />
+    <option name="totallyTimeSpent" value="19108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
@@ -424,12 +487,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/components/brain/brain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/Routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mindpay/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="196">
+          <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/helpers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/helpers/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/helpers/history.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/mind.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Question1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Question2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/pages/Question3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mindpay/src/pages/BasePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

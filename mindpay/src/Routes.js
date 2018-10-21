@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Router, Route} from 'react-router-dom';
+import { Switch, Router, Route } from 'react-router-dom';
 import { history } from './helpers';
 
 import Home from './pages/Home';
@@ -27,6 +27,5 @@ class App extends Component {
     }
 
 }
-
 
 export default App;
