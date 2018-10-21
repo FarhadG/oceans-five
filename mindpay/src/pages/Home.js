@@ -38,7 +38,7 @@ class Page extends Component {
     return (
       <div className="home">
         <Brain color={connected ? "blue" : "grey"} />
-        {!show && <h2 className="welcome">Loading Brain Waves</h2>}
+        {!show && <h2 className="welcome">Initializing</h2>}
         {show && <h2 className="welcome">Welcome</h2>}
         {show && connecting && !connected && <h2 className="welcome">Connecting...</h2>}
         {show && !connecting && connected && <h2 className="welcome">Mind Connected</h2>}
