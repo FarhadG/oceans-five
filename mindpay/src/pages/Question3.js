@@ -19,7 +19,7 @@ export default class Page extends BasePage {
         <Brain color={getColor(answer)} />
         {!answer && <h2 className="welcome">Babak requests $123.00. Do you accept?</h2>}
         {answer && <h2 className="welcome">{answer}</h2>}
-        <img className="paypal-logo huge" alt=""src={PayPal}/>
+        <img className="paypal-logo huge" alt="" src={PayPal}/>
       </div>
     )
   }

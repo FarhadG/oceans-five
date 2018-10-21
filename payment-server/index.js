@@ -17,8 +17,7 @@ paypal.configure({
 });
 
 app.post('/paypal', (req, res) => {
-
-  console.log('>>>', req.body)
+  const amount = JSON.stringify(req.body.payment);
 
   const paymentData = {
     "intent": "sale",
@@ -34,14 +33,14 @@ app.post('/paypal', (req, res) => {
         "items": [{
           "name": "item",
           "sku": "item",
-          "price": "1.00",
+          "price": amount,
           "currency": "USD",
           "quantity": 1
         }]
       },
       "amount": {
         "currency": "USD",
-        "total": "1.00"
+        "total": amount
       },
       "description": "This is the payment description."
     }]
