@@ -27,8 +27,12 @@ class Page extends Component {
         <div className="home">
           <Brain color={show? "blue": "grey"}/>
           {!show && <h2 className="welcome">Loading Brain Waves</h2>}
-          {show && <h2 className="welcome">Welcome</h2>}
-          {show && <button onClick={() => changePage("/question/1")}>Start</button>}
+          {show &&
+            <div>
+              <h2 className="welcome">Welcome</h2>
+              <span id='lippButton'></span>
+            </div>
+          }
         </div>
       )
    }
