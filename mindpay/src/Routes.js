@@ -7,7 +7,6 @@ import Question1 from './pages/Question1';
 import Question2 from './pages/Question2';
 import Question3 from './pages/Question3';
 
-// nothing works
 class App extends Component {
   render() {
     return (
@@ -18,6 +17,7 @@ class App extends Component {
             <Route path="/question/2" component={Question2} />
             <Route path="/question/3" component={Question3} />
             <Route path="/" component={Home} />
+            <Route path="*" component={Home} />
           </Switch>
         </Router>
       </div>

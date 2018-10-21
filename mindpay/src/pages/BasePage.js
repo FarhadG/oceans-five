@@ -21,17 +21,20 @@ class BasePage extends Component {
       count = 0,
       answer = mind.state;
 
-    this.setState({ answer });
+    this.setState({ answer: false });
 
     (function checkAnswer() {
       answer = answer || mind.state;
       count++;
+
       if (count < 5) {
         setTimeout(checkAnswer, 1000);
       }
       else {
         self.setState({ answer: answer ? 'Yes' : 'No' });
-        setTimeout(() => changePage(`/question/${self.next}`), 2000);
+        if (self.next) {
+          setTimeout(() => changePage(`/question/${self.next}`), 2000);
+        }
       }
     })()
   }
