@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5719f452-5a05-498a-9478-5dc6f76cb901" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/dashboard/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,7 +17,7 @@
     <session id="356102355">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="2" />
@@ -30,7 +28,7 @@
           <entry key="css" value="5" />
           <entry key="gitignore" value="2" />
           <entry key="html" value="1" />
-          <entry key="js" value="20" />
+          <entry key="js" value="23" />
           <entry key="json" value="4" />
           <entry key="scss" value="12" />
           <entry key="svg" value="1" />
@@ -41,7 +39,7 @@
           <entry key="CSS" value="5" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="20" />
+          <entry key="JavaScript" value="23" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="12" />
           <entry key="SVG" value="1" />
@@ -52,7 +50,7 @@
           <entry key="css" value="38" />
           <entry key="gitignore" value="6" />
           <entry key="html" value="4" />
-          <entry key="js" value="572" />
+          <entry key="js" value="823" />
           <entry key="json" value="92" />
           <entry key="scss" value="175" />
         </counts>
@@ -62,7 +60,7 @@
           <entry key="CSS" value="38" />
           <entry key="HTML" value="4" />
           <entry key="JSON" value="92" />
-          <entry key="JavaScript" value="572" />
+          <entry key="JavaScript" value="823" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="SCSS" value="175" />
         </counts>
@@ -72,13 +70,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/index.js">
+        <entry file="file://$PROJECT_DIR$/client/src/pages/dashboard/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="327">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/routes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -121,6 +128,7 @@
         <option value="$PROJECT_DIR$/client/src/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/nav/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/nav/style.scss" />
+        <option value="$PROJECT_DIR$/client/src/pages/dashboard/index.js" />
       </list>
     </option>
   </component>
@@ -1463,17 +1471,6 @@
               <item name="oceans-five" type="b2602c69:ProjectViewProjectNode" />
               <item name="oceans-five" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="oceans-five" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oceans-five" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oceans-five" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oceans-five" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -1526,16 +1523,15 @@
       <option name="presentableId" value="Default" />
       <updated>1540071757439</updated>
       <workItem from="1540071760740" duration="5312000" />
-      <workItem from="1540087603167" duration="189000" />
+      <workItem from="1540087603167" duration="795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5501000" />
+    <option name="totallyTimeSpent" value="6107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17798841" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1656,13 +1652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/nav/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
@@ -1689,10 +1678,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="280">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/pages/dashboard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
