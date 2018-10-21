@@ -17,7 +17,7 @@ class Page extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ show: true }), 5000);
+    setTimeout(() => this.setState({ show: true }), 2000);
   }
 
   connectBrain = (e) => {
