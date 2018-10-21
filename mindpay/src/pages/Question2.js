@@ -1,5 +1,6 @@
 import React from 'react';
 import Brain from '../components/brain/brain';
+import Visa from '../images/visa.png'
 
 import BasePage from './BasePage';
 import { getColor } from '../helpers';
@@ -18,6 +19,7 @@ export default class Page extends BasePage {
         <Brain color={getColor(answer)} />
         {!answer && <h2 className="welcome">Do you want to pay your Discover Card Bill for $1,890.00?</h2>}
         {answer && <h2 className="welcome">{answer}</h2>}
+        <img className="visa-logo" alt=""src={Visa}/>
       </div>
     )
   }

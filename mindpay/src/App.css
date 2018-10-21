@@ -23,6 +23,9 @@ h3, h2, h1 {
 button {
   position: relative;
   z-index: 99999999;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
 }
 
 button:disabled {
@@ -47,6 +50,13 @@ p {
   vertical-align: top;
   padding-right: 10px;
   cursor: pointer;
+}
+
+.visa-logo {
+  height: 100px;
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
 }
 
 .bigger {
