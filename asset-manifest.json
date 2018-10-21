@@ -1,8 +1,14 @@
 {
-  "main.css": "static/css/main.4bfee47e.css",
-  "main.css.map": "static/css/main.4bfee47e.css.map",
-  "main.js": "static/js/main.f195c394.js",
-  "main.js.map": "static/js/main.f195c394.js.map",
-  "static/media/Reader.scss": "static/media/Reader.e22923ae.scss",
-  "static/media/style.scss": "static/media/style.09184ffd.scss"
+  "main.css": "/oceans-five/static/css/main.64562502.chunk.css",
+  "main.js": "/oceans-five/static/js/main.78094909.chunk.js",
+  "main.js.map": "/oceans-five/static/js/main.78094909.chunk.js.map",
+  "static/js/1.f236e18f.chunk.js": "/oceans-five/static/js/1.f236e18f.chunk.js",
+  "static/js/1.f236e18f.chunk.js.map": "/oceans-five/static/js/1.f236e18f.chunk.js.map",
+  "runtime~main.js": "/oceans-five/static/js/runtime~main.2c172b61.js",
+  "runtime~main.js.map": "/oceans-five/static/js/runtime~main.2c172b61.js.map",
+  "static/media/paypal.png": "/oceans-five/static/media/paypal.b64e7a4c.png",
+  "static/css/main.64562502.chunk.css.map": "/oceans-five/static/css/main.64562502.chunk.css.map",
+  "index.html": "/oceans-five/index.html",
+  "precache-manifest.2d3f76c60566d22db8fa5406e72f8a65.js": "/oceans-five/precache-manifest.2d3f76c60566d22db8fa5406e72f8a65.js",
+  "service-worker.js": "/oceans-five/service-worker.js"
 }
