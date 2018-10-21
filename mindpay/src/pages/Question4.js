@@ -9,7 +9,7 @@ import './styles/home.css';
 export default class Page extends BasePage {
 
   constructor(props) {
-    super(props, 4);
+    super(props);
   }
 
   render() {
@@ -17,7 +17,7 @@ export default class Page extends BasePage {
     return (
       <div className="home">
         <Brain color={getColor(answer)} />
-        {!answer && <h2 className="welcome">Babak requests $123.00. Do you accept?</h2>}
+        {!answer && <h2 className="welcome">Walmart requests $86.00. Do you accept?</h2>}
         {answer && <h2 className="welcome">{answer}</h2>}
         <img className="paypal-logo huge" alt="" src={PayPal}/>
       </div>
