@@ -1,4 +1,4 @@
-import { MuseClient, channelNames } from 'muse-js';
+import { MuseClient } from 'muse-js';
 
 class Mind {
 
