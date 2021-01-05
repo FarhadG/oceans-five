@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://farhadg.github.io/oceans-five/",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "lodash": "^4.17.11",
