@@ -17,7 +17,7 @@
     "react-notification-system": "0.2.14",
     "react-qr-reader": "^2.1.1",
     "react-router": "3.0.5",
-    "react-scripts": "1.0.10",
+    "react-scripts": "5.0.1",
     "react-select": "1.0.0-rc.5",
     "react-transition-group": "1.2.1",
     "reactable": "0.14.1",
